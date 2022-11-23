@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-27T17:18:43 EDT" name="Suite1" finished-at="2022-08-27T17:19:17 EDT" duration-ms="33879">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.careerhack.runners.TestRunner@4d910fd6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-08-27T17:18:43 EDT" name="Nopackage" finished-at="2022-08-27T17:19:17 EDT" duration-ms="33879">
+      <class name="com.careerhack.runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.careerhack.runners.TestRunner@4d910fd6]" started-at="2022-08-27T17:18:43 EDT" name="setUpClass" finished-at="2022-08-27T17:18:44 EDT" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@42b28ff1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.careerhack.runners.TestRunner@4d910fd6]" started-at="2022-08-27T17:18:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-27T17:19:03 EDT" duration-ms="19702" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["simple search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google search"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [About 720,000,000 results (0.46 seconds] but found [About 729,000,000 results (0.45 seconds) ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [About 720,000,000 results (0.46 seconds] but found [About 729,000,000 results (0.45 seconds) ]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.careerhack.steps.GoogleSearch.i_receive_relevant_results(GoogleSearch.java:78)
+at ✽.I receive relevant results(file:///Users/sudiptachowdhury/eclipse-workspace/JuneSessionQAF/Features/Googlesearch.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.careerhack.runners.TestRunner@4d910fd6]" started-at="2022-08-27T17:19:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-27T17:19:17 EDT" duration-ms="13791" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["simple search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google search"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Quality Assurance - Google Search] but found [Software Testing - Google Search]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Quality Assurance - Google Search] but found [Software Testing - Google Search]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.careerhack.steps.GoogleSearch.i_receive_relevant_results(GoogleSearch.java:71)
+at ✽.I receive relevant results(file:///Users/sudiptachowdhury/eclipse-workspace/JuneSessionQAF/Features/Googlesearch.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.careerhack.runners.TestRunner@4d910fd6]" started-at="2022-08-27T17:19:17 EDT" name="tearDownClass" finished-at="2022-08-27T17:19:17 EDT" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.careerhack.runners.TestRunner -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Suite1 -->
+</testng-results>
